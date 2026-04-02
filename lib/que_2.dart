@@ -12,8 +12,12 @@
 
 import 'dart:io';
 void main(){
-  print('Enter the marks:'); 
-  int marks= int.parse(stdin.readLineSync()!);
+  print('Enter the marks:'); // user inputs the marks 
+  int marks= int.parse(stdin.readLineSync()!); 
+
+    // stdin.readLineSync() → takes input (String)
+    // ! → ensures not null
+    // int.parse() → converts to integer
 
   if (marks < 25) {
     print('You have obtained F grade.');
@@ -31,7 +35,11 @@ void main(){
   { 
     print('You have obtained B grade.');  
   } 
-  else { 
+  else if(marks<=100) { 
     print('You have obtained A grade.');
   }
+  else{  // no condition in else block
+    print('Please give valid marks i.e. less than or equall to 100');
+  }
+
 }
