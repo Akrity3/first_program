@@ -31,11 +31,14 @@ void main(){
 
   print('The reversed number of $num is: $reversedNumber');
 
-
-
-
-
-
-
-
 }
+
+
+// void main() {
+
+//   print('Enter a number: ');
+//   int num = int.parse(stdin.readLineSync()!);
+
+//   String reversed = num.toString().split('').reversed.join();
+//   print("Reversed number: $reversed");
+// }
