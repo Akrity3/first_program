@@ -20,8 +20,6 @@ import 'dart:io';
 
 // }
 
-import 'dart:io';
-
 void main() {
   print("Enter a number:");
   int num = int.parse(stdin.readLineSync()!);
